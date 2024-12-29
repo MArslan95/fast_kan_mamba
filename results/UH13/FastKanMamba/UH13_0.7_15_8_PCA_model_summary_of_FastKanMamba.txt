@@ -1,0 +1,30 @@
+Model: "ssfks_mamba_model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ spectral_spatial_token_gen  multiple                  2048      
+ eration (SpectralSpatialTo                                      
+ kenGeneration)                                                  
+                                                                 
+ fast_kolmogorov_attention_  multiple                  324299    
+ multi_head (FastKolmogorov                                      
+ AttentionMultiHead)                                             
+                                                                 
+ spectral_spatial_feature_e  multiple                  648854    
+ nhancement (SpectralSpatia                                      
+ lFeatureEnhancement)                                            
+                                                                 
+ state_space_model (StateSp  multiple                  33024     
+ aceModel)                                                       
+                                                                 
+ dense_16 (Dense)            multiple                  0 (unused)
+                                                                 
+ dropout_3 (Dropout)         multiple                  0 (unused)
+                                                                 
+ dense_17 (Dense)            multiple                  1935      
+                                                                 
+=================================================================
+Total params: 1010160 (3.85 MB)
+Trainable params: 1009935 (3.85 MB)
+Non-trainable params: 225 (900.00 Byte)
+_________________________________________________________________
